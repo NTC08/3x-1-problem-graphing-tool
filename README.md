@@ -15,3 +15,5 @@ input scale for how big you want it to be(how tall)
 input the space between points on the graph
 
 input line width
+
+or you can just press enter and it will be the defult value
