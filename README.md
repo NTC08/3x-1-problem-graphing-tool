@@ -17,3 +17,7 @@ input the space between points on the graph
 input line width
 
 or you can just press enter and it will be the defult value
+
+input speed
+
+input speed (frames per second)
