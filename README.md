@@ -8,11 +8,11 @@ input the number you want to solve
 
 input screen size x and y in pixels (default is x 800 y 400)
 
-input scale for how big you want it to be how tall the graph is (default is 0.5)
+input scale for how big you want it to be how tall the graph is (default is 0.07)
 
 [EX.] input 0.5 for haft size or input 2 for double the size
 
-input the space between points on the graph (default is 2)
+input the space between points on the graph (default is 5)
 
 input line width (default is 1)
 
