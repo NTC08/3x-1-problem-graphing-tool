@@ -101,6 +101,12 @@ while True:
         pygame.draw.rect(screen, "black",  number_rec,)
         screen.blit(number_text,(number_rec))
         
+        da_text = "{0}"
+        inputs_text = font.render("numbers = " + da_text.format(number2), False, "white")
+        inputs_rec = inputs_text.get_rect(topleft = (10,70))
+        pygame.draw.rect(screen, "black",  inputs_rec,)
+        screen.blit(inputs_text,(inputs_rec))
+        
         pygame.display.update()
         Clock.tick(speed)
     
@@ -115,5 +121,6 @@ while True:
             if color2 + 1 > len(color):
                 color2 = color2 - len(color)
             steps = 0
+            print("-------------------")
         else:
             ss = 0
