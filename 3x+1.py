@@ -4,6 +4,8 @@ import sys
 q = 0
 color = ["red", "green", "beige", "blue", "brown", "pink", "darkviolet", "gray", "navy", "moccasin", "orange", "yellow"]
 color2 = 0
+da_steps_list = []
+
 
 w = 0
 w = input("how many inputs : ")
@@ -107,9 +109,12 @@ while True:
         pygame.draw.rect(screen, "black",  inputs_rec,)
         screen.blit(inputs_text,(inputs_rec))
         
-        pygame.display.update()
-        Clock.tick(speed)
-    
+        da_steps = "{0}"
+        da_steps_text = font.render("steps = " + da_steps.format(da_steps_list), False, "white")
+        da_steps_rec = da_steps_text.get_rect(topleft = (10,90))
+        pygame.draw.rect(screen, "black",  da_steps_rec,)
+        screen.blit(da_steps_text,(da_steps_rec))
+        
     if number == 1.0:
         if q + 1 < len(number2): 
             q = q + 1
@@ -120,7 +125,16 @@ while True:
             color2 = q 
             if color2 + 1 > len(color):
                 color2 = color2 - len(color)
+            da_steps_list.append(steps)
             steps = 0
             print("-------------------")
-        else:
-            ss = 0
+        elif ss != 0:
+            da_steps_list.append(steps)
+            print(da_steps_list)
+            da_steps_text = font.render("steps = " + da_steps.format(da_steps_list), False, "white")
+            da_steps_rec = da_steps_text.get_rect(topleft = (10,90))
+            pygame.draw.rect(screen, "black",  da_steps_rec,)
+            screen.blit(da_steps_text,(da_steps_rec))
+            ss = ss - 1
+    pygame.display.update()
+    Clock.tick(speed)
