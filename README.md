@@ -1,5 +1,7 @@
 # 3x+1 problem-graphing-tool
 A 3x + 1 problem graphing tool
+![python3 9_yaHCD4oXpG](https://user-images.githubusercontent.com/78420855/195785301-9646036a-b203-4b41-88d2-4fadcb199747.png)
+
 # Install python packages
 Use the pip install -r requirements.txt OR use pip install pygame
 # How to use
